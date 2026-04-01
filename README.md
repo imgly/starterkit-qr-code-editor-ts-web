@@ -1,0 +1,1 @@
+# starterkit-qr-code-editor-ts-web
