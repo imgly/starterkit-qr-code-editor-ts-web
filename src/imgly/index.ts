@@ -134,5 +134,4 @@ export async function initQRCodeEditor(cesdk: CreativeEditorSDK) {
   // - Canvas menu: Adds "Generate QR Code" option in context menu
   // - Dock: Adds QR Code Generator button that opens the QR code panel
   await setupQRCodePlugin(cesdk);
-
 }
