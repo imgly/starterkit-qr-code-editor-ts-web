@@ -1,9 +1,10 @@
 /**
  * CE.SDK QR Code Editor Starterkit - Main Entry Point
  *
- * A design editor with QR code generation for creating stunning graphics.
+ * A design editor with QR code generation prominently featured.
+ * Use the QR Code button in the dock or the canvas menu to generate QR codes.
  *
- * @see https://img.ly/docs/cesdk/js/getting-started/
+ * @see https://img.ly/docs/cesdk/js/plugins/qr-code/
  */
 
 import CreativeEditorSDK from '@cesdk/cesdk-js';
@@ -16,13 +17,12 @@ import { resolveAssetPath } from './imgly/resolveAssetPath';
 // ============================================================================
 
 const config = {
-  userId: 'starterkit-qr-code-editor-user'
+  userId: 'starterkit-qr-code-editor-user',
 
-  // Local assets
-  // baseURL: `/assets/`,
+  // IMG.LY CDN (for quick testing only, NOT recommended for production)
 
-  // License key (required for production)
-  // license: 'YOUR_LICENSE_KEY',
+  // Local assets for development
+
 };
 
 // ============================================================================
