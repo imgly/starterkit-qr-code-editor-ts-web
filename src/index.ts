@@ -4,14 +4,13 @@
  * A design editor with QR code generation prominently featured.
  * Use the QR Code button in the dock or the canvas menu to generate QR codes.
  *
- * @see https://img.ly/docs/cesdk/js/stickers-and-shapes/insert-qr-code-b6cc53/
+ * @see https://img.ly/docs/cesdk/js/plugins/qr-code/
  */
 
 import CreativeEditorSDK from '@cesdk/cesdk-js';
 
 import { initQRCodeEditor } from './imgly';
 import { resolveAssetPath } from './imgly/resolveAssetPath';
-
 
 // ============================================================================
 // Configuration
@@ -43,7 +42,7 @@ CreativeEditorSDK.create('#cesdk_container', config)
 
     // Load the QR code demo scene from the public showcases URL
     // This scene contains pre-made QR code elements for demonstration
-    await cesdk.load(resolveAssetPath('/assets/scene.archive'));
+    await cesdk.loadFromArchiveURL(resolveAssetPath('/assets/scene.archive'));
 
     // Select the first QR code block for immediate editing
     const qrCodeBlock = cesdk.engine.block.findByName('QR Code 1')[0];
